@@ -1,4 +1,5 @@
 import UIKit
+import ReSwift
 import RemoteData
 
 class ViewController: UIViewController {
@@ -6,7 +7,7 @@ class ViewController: UIViewController {
   @IBOutlet var loadingSpinner: UIActivityIndicatorView!
   @IBOutlet var tableView: UITableView!
 
-  let reposService = ReposService()
+  let reposService = ReposService(store: mainStore)
 
   var repos: RemoteData<[Repo], RepoError> = .notAsked
 
@@ -15,25 +16,31 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    title = "RemoteData Example"
+    title = "RemoteData + ReSwift Example"
 
     tableView.dataSource = self
-    
+
     tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
   }
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
 
-    update(with: .loading)
-
-    reposService.getRepos { [weak self] remoteData in
-      self?.update(with: remoteData.map { $0.repos })
-    }
+    mainStore.subscribe(self)
+    reposService.getRepos()
   }
 
-  private func update(with data: RemoteData<[Repo], RepoError>) {
-    repos = data
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+
+    mainStore.unsubscribe(self)
+  }
+}
+
+extension ViewController: StoreSubscriber {
+
+  func newState(state: AppState) {
+    repos = state.repos
 
     DispatchQueue.main.async { [unowned self] in
       switch self.repos {

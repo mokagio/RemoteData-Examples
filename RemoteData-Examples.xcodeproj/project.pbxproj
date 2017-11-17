@@ -7,18 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F4C758F1FBE9F0B0031385F /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4C758E1FBE9F0B0031385F /* ReSwift.framework */; };
+		3F4C75901FBE9F230031385F /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB83D9E1FBE9BE6008B6F8F /* Repo.swift */; };
+		3F4C75911FBE9F230031385F /* RepoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB83DA21FBE9C2F008B6F8F /* RepoError.swift */; };
+		3F4C75921FBE9F230031385F /* ReposResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB83DA01FBE9C1E008B6F8F /* ReposResponse.swift */; };
+		3F4C75951FBEA4FB0031385F /* ReSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4C758E1FBE9F0B0031385F /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F4C75991FC2DB3E0031385F /* ReposService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C75981FC2DB3E0031385F /* ReposService.swift */; };
+		3F4C759B1FC2DB750031385F /* ReposService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C759A1FC2DB750031385F /* ReposService.swift */; };
+		3F4C759D1FC2DBA60031385F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C759C1FC2DBA60031385F /* AppState.swift */; };
+		3F4C759F1FC2DBCC0031385F /* Reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C759E1FC2DBCC0031385F /* Reducers.swift */; };
+		3F4C75A11FC2DC290031385F /* ReposAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C75A01FC2DC290031385F /* ReposAction.swift */; };
+		3F4C75A31FC2DC440031385F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4C75A21FC2DC440031385F /* Store.swift */; };
 		3F948A8C1FAB358A0041DD75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F948A8B1FAB358A0041DD75 /* AppDelegate.swift */; };
 		3F948A8E1FAB358A0041DD75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F948A8D1FAB358A0041DD75 /* ViewController.swift */; };
 		3F948A911FAB358A0041DD75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F948A8F1FAB358A0041DD75 /* Main.storyboard */; };
 		3F948A931FAB358A0041DD75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F948A921FAB358A0041DD75 /* Assets.xcassets */; };
 		3F948A961FAB358A0041DD75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F948A941FAB358A0041DD75 /* LaunchScreen.storyboard */; };
+		3FB075F11FC4319D003E4F90 /* RemoteData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB075F01FC4319D003E4F90 /* RemoteData.framework */; };
 		3FB83D9F1FBE9BE6008B6F8F /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB83D9E1FBE9BE6008B6F8F /* Repo.swift */; };
 		3FB83DA11FBE9C1E008B6F8F /* ReposResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB83DA01FBE9C1E008B6F8F /* ReposResponse.swift */; };
 		3FB83DA31FBE9C2F008B6F8F /* RepoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB83DA21FBE9C2F008B6F8F /* RepoError.swift */; };
-		3FB83DA51FBE9CA2008B6F8F /* ReposService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB83DA41FBE9CA2008B6F8F /* ReposService.swift */; };
+		3FB83DAD1FBE9E44008B6F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB83DAC1FBE9E44008B6F8F /* AppDelegate.swift */; };
+		3FB83DAF1FBE9E44008B6F8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB83DAE1FBE9E44008B6F8F /* ViewController.swift */; };
+		3FB83DB21FBE9E44008B6F8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB83DB01FBE9E44008B6F8F /* Main.storyboard */; };
+		3FB83DB41FBE9E44008B6F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB83DB31FBE9E44008B6F8F /* Assets.xcassets */; };
+		3FB83DB71FBE9E44008B6F8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB83DB51FBE9E44008B6F8F /* LaunchScreen.storyboard */; };
+		3FCEE56C1FC432A600CC0AF4 /* RemoteData.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3FB075F01FC4319D003E4F90 /* RemoteData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3FCEE56D1FC433CB00CC0AF4 /* RemoteData.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB075F01FC4319D003E4F90 /* RemoteData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3F4C75941FBEA4E80031385F /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3FCEE56D1FC433CB00CC0AF4 /* RemoteData.framework in Copy Frameworks */,
+				3F4C75951FBEA4FB0031385F /* ReSwift.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB075F21FC431C8003E4F90 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3FCEE56C1FC432A600CC0AF4 /* RemoteData.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3F4C758E1FBE9F0B0031385F /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		3F4C75981FC2DB3E0031385F /* ReposService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposService.swift; sourceTree = "<group>"; };
+		3F4C759A1FC2DB750031385F /* ReposService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposService.swift; sourceTree = "<group>"; };
+		3F4C759C1FC2DBA60031385F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		3F4C759E1FC2DBCC0031385F /* Reducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducers.swift; sourceTree = "<group>"; };
+		3F4C75A01FC2DC290031385F /* ReposAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposAction.swift; sourceTree = "<group>"; };
+		3F4C75A21FC2DC440031385F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		3F948A881FAB358A0041DD75 /* RemoteData-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteData-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F948A8B1FAB358A0041DD75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F948A8D1FAB358A0041DD75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,10 +76,17 @@
 		3F948A921FAB358A0041DD75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F948A951FAB358A0041DD75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F948A971FAB358A0041DD75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB075F01FC4319D003E4F90 /* RemoteData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RemoteData.framework; path = Carthage/Build/iOS/RemoteData.framework; sourceTree = "<group>"; };
 		3FB83D9E1FBE9BE6008B6F8F /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		3FB83DA01FBE9C1E008B6F8F /* ReposResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposResponse.swift; sourceTree = "<group>"; };
 		3FB83DA21FBE9C2F008B6F8F /* RepoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoError.swift; sourceTree = "<group>"; };
-		3FB83DA41FBE9CA2008B6F8F /* ReposService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposService.swift; sourceTree = "<group>"; };
+		3FB83DAA1FBE9E44008B6F8F /* RemoteData-Example-ReSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteData-Example-ReSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB83DAC1FBE9E44008B6F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FB83DAE1FBE9E44008B6F8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FB83DB11FBE9E44008B6F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FB83DB31FBE9E44008B6F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FB83DB61FBE9E44008B6F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FB83DB81FBE9E44008B6F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +94,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB075F11FC4319D003E4F90 /* RemoteData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB83DA71FBE9E44008B6F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4C758F1FBE9F0B0031385F /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,16 +114,28 @@
 			children = (
 				3FB83D9D1FBE9BDC008B6F8F /* Shared */,
 				3F948A8A1FAB358A0041DD75 /* RemoteData-Example */,
+				3FB83DAB1FBE9E44008B6F8F /* RemoteData-Example-ReSwift */,
 				3F948A891FAB358A0041DD75 /* Products */,
+				3F4C758D1FBE9F0B0031385F /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
 			tabWidth = 2;
 		};
+		3F4C758D1FBE9F0B0031385F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FB075F01FC4319D003E4F90 /* RemoteData.framework */,
+				3F4C758E1FBE9F0B0031385F /* ReSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3F948A891FAB358A0041DD75 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				3F948A881FAB358A0041DD75 /* RemoteData-Example.app */,
+				3FB83DAA1FBE9E44008B6F8F /* RemoteData-Example-ReSwift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				3F948A8B1FAB358A0041DD75 /* AppDelegate.swift */,
+				3F4C75981FC2DB3E0031385F /* ReposService.swift */,
 				3F948A8D1FAB358A0041DD75 /* ViewController.swift */,
 				3F948A8F1FAB358A0041DD75 /* Main.storyboard */,
 				3F948A921FAB358A0041DD75 /* Assets.xcassets */,
@@ -81,9 +160,26 @@
 				3FB83D9E1FBE9BE6008B6F8F /* Repo.swift */,
 				3FB83DA21FBE9C2F008B6F8F /* RepoError.swift */,
 				3FB83DA01FBE9C1E008B6F8F /* ReposResponse.swift */,
-				3FB83DA41FBE9CA2008B6F8F /* ReposService.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		3FB83DAB1FBE9E44008B6F8F /* RemoteData-Example-ReSwift */ = {
+			isa = PBXGroup;
+			children = (
+				3FB83DAC1FBE9E44008B6F8F /* AppDelegate.swift */,
+				3F4C759C1FC2DBA60031385F /* AppState.swift */,
+				3F4C759E1FC2DBCC0031385F /* Reducers.swift */,
+				3F4C75A01FC2DC290031385F /* ReposAction.swift */,
+				3F4C759A1FC2DB750031385F /* ReposService.swift */,
+				3F4C75A21FC2DC440031385F /* Store.swift */,
+				3FB83DAE1FBE9E44008B6F8F /* ViewController.swift */,
+				3FB83DB01FBE9E44008B6F8F /* Main.storyboard */,
+				3FB83DB31FBE9E44008B6F8F /* Assets.xcassets */,
+				3FB83DB51FBE9E44008B6F8F /* LaunchScreen.storyboard */,
+				3FB83DB81FBE9E44008B6F8F /* Info.plist */,
+			);
+			path = "RemoteData-Example-ReSwift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +192,7 @@
 				3F948A841FAB358A0041DD75 /* Sources */,
 				3F948A851FAB358A0041DD75 /* Frameworks */,
 				3F948A861FAB358A0041DD75 /* Resources */,
+				3FB075F21FC431C8003E4F90 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -106,17 +203,39 @@
 			productReference = 3F948A881FAB358A0041DD75 /* RemoteData-Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3FB83DA91FBE9E44008B6F8F /* RemoteData-Example-ReSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FB83DB91FBE9E44008B6F8F /* Build configuration list for PBXNativeTarget "RemoteData-Example-ReSwift" */;
+			buildPhases = (
+				3FB83DA61FBE9E44008B6F8F /* Sources */,
+				3FB83DA71FBE9E44008B6F8F /* Frameworks */,
+				3FB83DA81FBE9E44008B6F8F /* Resources */,
+				3F4C75941FBEA4E80031385F /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RemoteData-Example-ReSwift";
+			productName = "RemoteData-Example-ReSwift";
+			productReference = 3FB83DAA1FBE9E44008B6F8F /* RemoteData-Example-ReSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3F2ECD101FAB339800221D7C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0900;
 				TargetAttributes = {
 					3F948A871FAB358A0041DD75 = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					3FB83DA91FBE9E44008B6F8F = {
+						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -135,6 +254,7 @@
 			projectRoot = "";
 			targets = (
 				3F948A871FAB358A0041DD75 /* RemoteData-Example */,
+				3FB83DA91FBE9E44008B6F8F /* RemoteData-Example-ReSwift */,
 			);
 		};
 /* End PBXProject section */
@@ -150,6 +270,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3FB83DA81FBE9E44008B6F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB83DB71FBE9E44008B6F8F /* LaunchScreen.storyboard in Resources */,
+				3FB83DB41FBE9E44008B6F8F /* Assets.xcassets in Resources */,
+				3FB83DB21FBE9E44008B6F8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -162,7 +292,24 @@
 				3FB83DA11FBE9C1E008B6F8F /* ReposResponse.swift in Sources */,
 				3FB83DA31FBE9C2F008B6F8F /* RepoError.swift in Sources */,
 				3FB83D9F1FBE9BE6008B6F8F /* Repo.swift in Sources */,
-				3FB83DA51FBE9CA2008B6F8F /* ReposService.swift in Sources */,
+				3F4C75991FC2DB3E0031385F /* ReposService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB83DA61FBE9E44008B6F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4C75901FBE9F230031385F /* Repo.swift in Sources */,
+				3FB83DAF1FBE9E44008B6F8F /* ViewController.swift in Sources */,
+				3F4C759D1FC2DBA60031385F /* AppState.swift in Sources */,
+				3F4C75921FBE9F230031385F /* ReposResponse.swift in Sources */,
+				3F4C75911FBE9F230031385F /* RepoError.swift in Sources */,
+				3F4C75A31FC2DC440031385F /* Store.swift in Sources */,
+				3F4C75A11FC2DC290031385F /* ReposAction.swift in Sources */,
+				3FB83DAD1FBE9E44008B6F8F /* AppDelegate.swift in Sources */,
+				3F4C759F1FC2DBCC0031385F /* Reducers.swift in Sources */,
+				3F4C759B1FC2DB750031385F /* ReposService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +328,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				3F948A951FAB358A0041DD75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3FB83DB01FBE9E44008B6F8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FB83DB11FBE9E44008B6F8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FB83DB51FBE9E44008B6F8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FB83DB61FBE9E44008B6F8F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -236,6 +399,10 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -301,6 +468,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -314,6 +485,137 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "opensource.mokagio.RemoteData-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FB83DBA1FBE9E44008B6F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "RemoteData-Example-ReSwift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "opensource.mokagio.RemoteData-Example-ReSwift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FB83DBB1FBE9E44008B6F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "RemoteData-Example-ReSwift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "opensource.mokagio.RemoteData-Example-ReSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -340,6 +642,15 @@
 			buildConfigurations = (
 				3F948A991FAB358A0041DD75 /* Debug */,
 				3F948A9A1FAB358A0041DD75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FB83DB91FBE9E44008B6F8F /* Build configuration list for PBXNativeTarget "RemoteData-Example-ReSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB83DBA1FBE9E44008B6F8F /* Debug */,
+				3FB83DBB1FBE9E44008B6F8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
