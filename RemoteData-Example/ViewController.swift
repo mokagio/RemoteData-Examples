@@ -5,6 +5,8 @@ class ViewController: UIViewController {
   @IBOutlet var loadingSpinner: UIActivityIndicatorView!
   @IBOutlet var tableView: UITableView!
 
+  let reposService = ReposService()
+
   var repos: RemoteData<[Repo], RepoError> = .notAsked
 
   let cellIdentifier = "cell"
@@ -24,37 +26,9 @@ class ViewController: UIViewController {
 
     update(with: .loading)
 
-    getRepos { [weak self] remoteData in
+    reposService.getRepos { [weak self] remoteData in
       self?.update(with: remoteData.map { $0.repos })
     }
-  }
-
-  private func getRepos(completion: @escaping (RemoteData<ReposResponse, RepoError>) -> ()) {
-    guard let url = URL(string: "https://api.github.com/search/repositories?q=language:swift&sort:start") else {
-      completion(RemoteData.failure(.urlFail))
-      return
-    }
-
-    URLSession.shared.dataTask(with: url) { data, response, error in
-      if let error = error {
-        completion(RemoteData.failure(RepoError.boxed(error)))
-        return
-      }
-
-      guard let data = data else {
-        completion(RemoteData.failure(RepoError.noData))
-        return
-      }
-
-      do {
-        let reposResponse = try JSONDecoder().decode(ReposResponse.self, from: data)
-        completion(RemoteData.success(reposResponse))
-      } catch let decodeError {
-        completion(RemoteData.failure(RepoError.boxed(decodeError)))
-        return
-      }
-    }
-    .resume()
   }
 
   private func update(with data: RemoteData<[Repo], RepoError>) {
@@ -112,34 +86,7 @@ extension ViewController: UITableViewDataSource {
   }
 }
 
-enum RepoError: Error {
-  case boxed(Error)
-  case urlFail
-  case noData
-}
 
-struct ReposResponse {
-  let repos: [Repo]
-}
-
-extension ReposResponse: Decodable {
-  enum CodingKeys: String, CodingKey {
-    case repos = "items"
-  }
-
-  init(from decoder: Decoder) throws {
-    let container = try decoder.container(keyedBy: CodingKeys.self)
-    let repos: [Repo] = try container.decode([Repo].self, forKey: .repos)
-    self.init(repos: repos)
-  }
-}
-
-struct Repo: Decodable {
-  let id: Int
-  let url: URL
-  let name: String
-  let description: String
-}
 
 
 //
