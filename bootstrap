@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if ! which carthage > /dev/null; then
+  echo "Please install Carthage first. https://github.com/Carthage/Carthage/"
+  exit 1
+fi
+
+carthage bootstrap --no-use-binaries --platform ios
